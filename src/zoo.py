@@ -41,12 +41,13 @@ class Zoo:
         for zoo_animal in self.animals:
             if zoo_animal.id == animal_id:
                 self.animals.remove(zoo_animal)
+                return
 
     def display_animals(self):
         """Displays the animals in the zoo
         Parameters:
         - none.
-        """
+        """        
         if not self.animals:
             os.system("cls")
             print("Your zoo is empty.")
@@ -55,7 +56,7 @@ class Zoo:
         print("Animals in the zoo: ")
         for animal in self.animals:
             print(animal)
-
+            
     def get_animal(self, animal_id):
         """Returns an animal based on their id"""
         for zoo_animal in self.animals:

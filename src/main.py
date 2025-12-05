@@ -15,7 +15,7 @@ def zoo_details(zoo_obj):
     """Shows all of the zoo animals and their parameters."""
     os.system("cls")
 
-    zoo_obj.display_animals()
+    print(zoo_obj.display_animals())
 
 def new_animal(zoo_obj):
     """Tries to create a new animal and adds it to the zoo."""
